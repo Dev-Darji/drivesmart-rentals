@@ -23,7 +23,7 @@ const packages = [
     subtitle: "Hassle-free pickup & drop",
     price: "₹800",
     unit: "one way",
-    features: ["Ahmedabad Airport to City", "Premium Meet & greet", "Live flight tracking", "Free 30 min wait time", "Direct point-to-point"],
+    features: ["Airport to City or Inter-city", "Premium Meet & greet", "Live flight tracking", "Free 30 min wait time", "Direct point-to-point"],
     popular: false,
   },
 ];

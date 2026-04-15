@@ -9,7 +9,6 @@ import GallerySection from "@/components/GallerySection";
 import ReviewsSection from "@/components/ReviewsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import FloatingButtons from "@/components/FloatingButtons";
 
 const Index = () => (
   <>
@@ -24,7 +23,6 @@ const Index = () => (
     <ReviewsSection />
     <ContactSection />
     <Footer />
-    <FloatingButtons />
   </>
 );
 

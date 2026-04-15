@@ -1,7 +1,7 @@
 import { Star } from "lucide-react";
 
 const reviews = [
-  { name: "Rajesh Patel", rating: 5, review: "Excellent service! The driver was very punctual and the car was spotlessly clean. Best car rental in Ahmedabad." },
+  { name: "Rajesh Patel", rating: 5, review: "Excellent service! The driver was very punctual and the car was spotlessly clean. Best car rental across Gujarat." },
   { name: "Priya Sharma", rating: 5, review: "Booked an Innova for our family trip to Udaipur. Very comfortable ride and reasonable pricing. Highly recommended!" },
   { name: "Amit Desai", rating: 4, review: "Been using their airport pickup service for a year now. Always on time and very professional drivers." },
   { name: "Sneha Joshi", rating: 5, review: "Used their tempo traveller for a group trip to Somnath. Everything was perfectly arranged. Will book again!" },

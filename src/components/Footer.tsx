@@ -7,7 +7,7 @@ const Footer = () => (
         <div>
           <h3 className="font-heading font-bold text-lg mb-4">🚗 Jay Jogmaya Travels</h3>
           <p className="text-accent-foreground/60 text-sm leading-relaxed">
-            Your trusted car rental partner in Ahmedabad. Reliable rides, transparent pricing, and professional service since 2009.
+            Your trusted car rental partner across Gujarat. Reliable rides, transparent pricing, and professional service since 2009.
           </p>
         </div>
 
