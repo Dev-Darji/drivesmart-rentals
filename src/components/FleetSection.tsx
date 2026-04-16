@@ -13,30 +13,30 @@ const cars = [
     mileage: "22 km/l", 
     seats: "5 Seater", 
     ac: "A/C", 
-    rate: "Premium", 
+    rate: "Top Class", 
     image: swiftImg,
     color: "from-blue-500/10 to-transparent" 
   },
   { 
     name: "New Ertiga", 
-    type: "MPV (7 Seater)", 
+    type: "7 Seater", 
     transmission: "Manual", 
     mileage: "19 km/l", 
     seats: "7 Seater", 
     ac: "Dual A/C", 
-    rate: "Executive", 
+    rate: "Very Good", 
     image: ertigaImg, 
     popular: true,
     color: "from-primary/10 to-transparent"
   },
   { 
     name: "Innova Crysta", 
-    type: "Luxury SUV", 
+    type: "Luxury Car", 
     transmission: "Manual", 
     mileage: "14 km/l", 
     seats: "7 Seater", 
     ac: "Dual A/C", 
-    rate: "Luxury", 
+    rate: "Best Choice", 
     image: innovaImg,
     color: "from-purple-500/10 to-transparent"
   },
@@ -51,9 +51,9 @@ const FleetSection = () => (
         viewport={{ once: true }}
         className="text-center mb-16 max-w-2xl mx-auto"
       >
-        <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">Our Fleet</span>
-        <h2 className="text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">Choice of Professionals</h2>
-        <p className="text-muted-foreground mt-4 text-base">Travel in style and comfort. Every car in our fleet is sanitized and maintained to the highest standards.</p>
+        <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">Our Cars</span>
+        <h2 className="text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">Best Cars for Your Trip</h2>
+        <p className="text-muted-foreground mt-4 text-base">Travel in style and comfort. Every car in our fleet is cleaned and ready for your ride.</p>
       </motion.div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

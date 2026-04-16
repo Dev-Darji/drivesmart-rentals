@@ -1,30 +1,30 @@
-import { Car, Clock, MapPin, Users, Award, ShieldCheck, Heart, Zap } from "lucide-react";
+import { Car, Clock, MapPin, Users, ShieldCheck, Heart, Zap, Mail } from "lucide-react";
 import aboutImg from "@/assets/about_trust.png";
 import { motion } from "framer-motion";
 
 const excellenceCards = [
   {
     icon: Clock,
-    title: "12+ Years Experience",
-    desc: "Trusted by Morbi since 2012 for reliable and safe transportation services.",
+    title: "12+ Years of Trusted Help",
+    desc: "Helping Morbi people since 2012 with safe and easy car booking.",
     color: "from-blue-500/20 to-transparent"
   },
   {
     icon: Car,
-    title: "10+ Premium Fleet",
-    desc: "Our well-maintained vehicles ensure a comfortable journey every single time.",
+    title: "10+ Best Quality Cars",
+    desc: "Our clean and well-kept cars make your trip very comfortable.",
     color: "from-primary/20 to-transparent"
   },
   {
     icon: Users,
     title: "5000+ Happy Trips",
-    desc: "Over five thousand successful journeys across Gujarat and neighboring states.",
+    desc: "Finished thousands of successful trips all over Gujarat.",
     color: "from-green-500/20 to-transparent"
   },
   {
     icon: ShieldCheck,
-    title: "Verified Drivers",
-    desc: "Our pilots are professional, polite, and verified for your absolute safety.",
+    title: "Safe & Good Drivers",
+    desc: "Our drivers are very polite, professional and verified for your safety.",
     color: "from-purple-500/20 to-transparent"
   }
 ];
@@ -42,7 +42,7 @@ const AboutSection = () => (
           viewport={{ once: true }}
           className="text-primary text-xs font-bold uppercase tracking-[0.3em] block"
         >
-          Our Story & Excellence
+          Our Story
         </motion.span>
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ const AboutSection = () => (
           transition={{ delay: 0.1 }}
           className="text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight"
         >
-          A Legacy Founded on <span className="text-primary italic">Trust</span>
+          12 Years of <span className="text-primary italic">Trust</span>
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ const AboutSection = () => (
           transition={{ delay: 0.2 }}
           className="text-foreground/60 text-lg max-w-2xl mx-auto"
         >
-          Shiv Car Rental has been Morbi's first choice for premium travel for over a decade. We combine traditional hospitality with modern efficiency.
+          Shiv Car Rental is Morbi's favorite choice for travel. We provide great service with easy and fast booking for everyone.
         </motion.p>
       </div>
 
@@ -74,10 +74,10 @@ const AboutSection = () => (
           <div className="relative z-10 space-y-6">
             <h3 className="text-3xl font-bold text-white">The Shiv Promise</h3>
             <p className="text-foreground/70 text-lg leading-relaxed">
-              Serving Morbi since 2012, we've built our reputation on three simple pillars: <span className="text-primary font-bold italic">Reliability, Safety, and Transparency.</span>
+              Serving Morbi since 2012. We work on three simple things: <span className="text-primary font-bold italic">Honesty, Safety, and Good Prices.</span>
             </p>
             <p className="text-foreground/70 text-lg leading-relaxed">
-              Whether you're planning a local wedding or a long-distance outstation adventure, our commitment to your comfort remains unwavering.
+              If you are planning for a wedding or a long trip, we are always here for your comfort.
             </p>
             <div className="flex gap-4 pt-4">
               <div className="p-4 bg-primary/10 rounded-2xl"><Heart className="w-6 h-6 text-primary" /></div>

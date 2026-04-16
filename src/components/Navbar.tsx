@@ -7,7 +7,6 @@ const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Fleet", href: "#fleet" },
-  { label: "Pricing", href: "#pricing" },
   { label: "Locations", href: "#locations" },
   { label: "Contact", href: "#contact" },
 ];
@@ -82,24 +81,26 @@ const Navbar = () => {
         </div>
 
         {/* CTA Icons */}
-        <div className="flex justify-end items-center gap-2 lg:gap-3">
-          <div className="hidden lg:flex items-center gap-3">
-            <motion.a 
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
-              className="bg-primary text-primary-foreground w-11 h-11 flex items-center justify-center rounded-2xl shadow-lg hover:bg-primary/90 transition-all border border-primary/20"
+        <div className="flex justify-end items-center gap-4 lg:gap-6">
+          <div className="hidden lg:flex items-center gap-4">
+            <motion.div 
+              animate={{ 
+                opacity: [0.8, 1, 0.8],
+                scale: [0.98, 1, 0.98]
+              }}
+              transition={{ 
+                duration: 2, 
+                repeat: Infinity, 
+                ease: "easeInOut" 
+              }}
+              className="relative group"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </motion.a>
-            <motion.a 
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
-              className="bg-primary text-primary-foreground w-11 h-11 flex items-center justify-center rounded-2xl shadow-lg hover:bg-primary/90 transition-all border border-primary/20"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-            </motion.a>
+               <div className="absolute inset-x-0 -inset-y-1 bg-primary/40 blur-xl rounded-xl"></div>
+               <div className="relative flex flex-col items-center justify-center bg-[#0b0f14] border border-primary/60 w-24 h-12 rounded-xl shadow-[0_0_20px_rgba(234,179,8,0.4)]">
+                  <span className="text-[9px] font-bold text-primary uppercase tracking-[0.1em] leading-none mb-1">Available</span>
+                  <span className="text-[15px] font-black text-white leading-none tracking-wider">24 / 7</span>
+               </div>
+            </motion.div>
             <motion.a 
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}

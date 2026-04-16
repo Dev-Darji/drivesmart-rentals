@@ -17,15 +17,15 @@ const routes = [
 const LocationsSection = () => (
   <section id="locations" className="py-24 lg:py-32 bg-surface-warm overflow-hidden relative">
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(var(--primary),0.03)_0,transparent_70%)]" />
-    
+
     <div className="container max-w-6xl px-5 lg:px-8 relative z-10">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         className="text-center mb-16 max-w-4xl mx-auto"
       >
-        <span className="text-primary font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Coverage</span>
+        <span className="text-primary font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Locations</span>
         <h2 className="text-4xl lg:text-5xl font-extrabold text-foreground mt-2 tracking-tight">Destinations Across Borders</h2>
         <p className="text-muted-foreground mt-4 text-lg">Whether it's a quick airport run or a multi-state tour, we've got you covered.</p>
       </motion.div>
@@ -35,7 +35,7 @@ const LocationsSection = () => (
         <div className="w-full relative flex overflow-x-hidden group">
           <div className="absolute top-0 bottom-0 left-0 w-40 bg-gradient-to-r from-surface-warm to-transparent z-10"></div>
           <div className="absolute top-0 bottom-0 right-0 w-40 bg-gradient-to-l from-surface-warm to-transparent z-10"></div>
-          
+
           <div className="animate-marquee flex flex-row gap-6 whitespace-nowrap py-4 group-hover:[animation-play-state:paused]" style={{ animationDuration: '45s' }}>
             {[...cities, ...cities, ...cities].map((c, idx) => (
               <span key={`${c}-${idx}`} className="inline-flex px-10 py-5 rounded-[1.5rem] border border-white/5 bg-card text-foreground font-bold text-lg shadow-sm hover:border-primary/40 hover:text-primary transition-all cursor-default">
@@ -49,7 +49,7 @@ const LocationsSection = () => (
         <div className="w-full relative flex overflow-x-hidden group">
           <div className="absolute top-0 bottom-0 left-0 w-40 bg-gradient-to-r from-surface-warm to-transparent z-10 pointer-events-none"></div>
           <div className="absolute top-0 bottom-0 right-0 w-40 bg-gradient-to-l from-surface-warm to-transparent z-10 pointer-events-none"></div>
-          
+
           <div className="animate-marqueer flex flex-row gap-8 whitespace-nowrap py-6 group-hover:[animation-play-state:paused]" style={{ animationDuration: '45s' }}>
             {[...routes, ...routes].map((r, idx) => (
               <a
@@ -62,7 +62,7 @@ const LocationsSection = () => (
                 <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                   <r.icon className="w-20 h-20 text-foreground" />
                 </div>
-                
+
                 <div className="flex flex-col gap-3 w-full relative z-10">
                   <div className="flex items-center justify-between w-full">
                     <span className="font-extrabold text-foreground text-xl">{r.from}</span>
