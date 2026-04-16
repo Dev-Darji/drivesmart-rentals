@@ -1,5 +1,6 @@
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const packages = [
   {
@@ -31,60 +32,75 @@ const packages = [
 const PricingSection = () => (
   <section id="pricing" className="py-24 lg:py-32 bg-background relative overflow-hidden">
     <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.02]"></div>
-    <div className="container relative z-10">
-      <div className="text-center mb-16 max-w-4xl mx-auto">
-        <span className="text-primary font-bold text-sm uppercase tracking-widest bg-primary/10 px-4 py-2 rounded-full inline-block">Pricing Plans</span>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-foreground mt-6 tracking-tight whitespace-normal md:whitespace-nowrap">Transparent & Competitive Rates</h2>
-        <p className="text-muted-foreground mt-4 text-lg">No hidden charges, no surprises. We offer straightforward pricing for top-tier service tailored to your needs.</p>
-      </div>
+    <div className="container max-w-6xl px-5 lg:px-8 relative z-10">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-center mb-16 max-w-4xl mx-auto"
+      >
+        <span className="text-primary font-bold text-xs tracking-[0.2em] uppercase mb-4 block">Our Plans</span>
+        <h2 className="text-4xl lg:text-5xl font-extrabold text-foreground mt-2 tracking-tight">Simple, Honest Pricing</h2>
+        <p className="text-muted-foreground mt-4 text-lg">No hidden fees. No surprises. Just premium service at reasonable rates.</p>
+      </motion.div>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
-        {packages.map((pkg) => (
-          <div
+      <div className="grid md:grid-cols-3 gap-8 items-center">
+        {packages.map((pkg, i) => (
+          <motion.div
             key={pkg.title}
-            className={`rounded-3xl p-8 lg:p-10 transition-all duration-300 relative border flex flex-col h-full ${
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            className={`rounded-[2.5rem] p-10 transition-all duration-500 relative flex flex-col h-full bg-card group ${
               pkg.popular
-                ? "bg-foreground text-background border-foreground shadow-[0_20px_50px_rgba(0,0,0,0.2)] md:scale-105 z-10"
-                : "bg-card text-foreground border-border shadow-card hover:shadow-elevated"
+                ? "border-2 border-primary shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] md:scale-110 z-10"
+                : "border border-border hover:border-primary/30"
             }`}
           >
             {pkg.popular && (
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-bold shadow-md">
-                  Most Popular choice
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
+                <span className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg">
+                  <Sparkles className="w-3 h-3" /> BEST VALUE
                 </span>
               </div>
             )}
-            <div className="mb-6">
-              <h3 className="font-heading font-black text-2xl">{pkg.title}</h3>
-              <p className={`text-sm mt-2 font-medium ${pkg.popular ? "text-background/70" : "text-muted-foreground"}`}>{pkg.subtitle}</p>
+            
+            <div className="mb-8">
+              <h3 className="font-extrabold text-2xl group-hover:text-primary transition-colors">{pkg.title}</h3>
+              <p className="text-sm mt-3 text-muted-foreground font-medium">{pkg.subtitle}</p>
             </div>
             
-            <div className="mb-8 pb-8 border-b border-white/10">
+            <div className="mb-8 pb-8 border-b border-white/5">
               <div className="flex items-end gap-2">
-                <span className={`text-5xl font-heading font-black ${pkg.popular ? "text-white" : "text-primary"}`}>{pkg.price}</span>
+                <span className="text-5xl font-extrabold text-foreground">{pkg.price}</span>
               </div>
-              <span className={`inline-block mt-2 font-bold px-3 py-1 rounded-md text-sm ${pkg.popular ? "bg-white/10 text-white" : "bg-primary/10 text-primary"}`}>
+              <span className="inline-block mt-4 font-bold px-4 py-1.5 rounded-xl text-xs bg-primary/10 text-primary uppercase tracking-widest">
                 {pkg.unit}
               </span>
             </div>
 
-            <ul className="space-y-4 mb-8 flex-grow">
+            <ul className="space-y-4 mb-10 flex-grow">
               {pkg.features.map((f) => (
-                <li key={f} className="flex items-start gap-3 text-[15px] font-medium">
-                  <CheckCircle2 className={`w-5 h-5 flex-shrink-0 mt-0.5 ${pkg.popular ? "text-primary" : "text-primary"}`} />
-                  <span className={pkg.popular ? "text-background/90" : "text-muted-foreground"}>{f}</span>
+                <li key={f} className="flex items-start gap-4 text-sm font-medium text-foreground/80">
+                  <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
+                  <span>{f}</span>
                 </li>
               ))}
             </ul>
 
-            <a href="https://wa.me/919725763394?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20know%20about%20pricing" target="_blank" rel="noopener noreferrer" className="mt-auto">
-              <Button className={`w-full h-14 rounded-xl text-base font-bold shadow-sm transition-all group ${pkg.popular ? "bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-[1.02]" : "bg-secondary text-secondary-foreground hover:bg-primary/10 border border-border"}`}>
-                Get Selected Plan
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            <a 
+              href={`https://wa.me/919725763394?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20know%20about%20the%20${pkg.title}`} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="mt-auto block group/btn"
+            >
+              <Button className={`w-full h-14 rounded-2xl text-base font-bold transition-all ${pkg.popular ? "bg-primary text-primary-foreground hover:bg-primary/90" : "bg-white/5 text-foreground hover:bg-primary hover:text-primary-foreground border border-white/5"}`}>
+                Check Availability
+                <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
               </Button>
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
