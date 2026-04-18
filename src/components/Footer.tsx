@@ -25,7 +25,7 @@ const Footer = () => (
         >
           <h4 className="font-semibold mb-6 text-primary text-xs uppercase tracking-widest">Quick Links</h4>
           <ul className="space-y-4 text-sm text-foreground/70">
-            {["Home", "About", "Fleet", "Contact"].map((l) => (
+            {["Home", "About", "Fleet", "Locations", "Contact"].map((l) => (
               <li key={l}><a href={`#${l.toLowerCase()}`} className="hover:text-primary transition-colors flex items-center justify-center sm:justify-start gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-primary/20 group-hover:bg-primary transition-all"></span> {l}</a></li>
             ))}
           </ul>
@@ -39,7 +39,7 @@ const Footer = () => (
         >
           <h4 className="font-semibold mb-6 text-primary text-xs uppercase tracking-widest">Our Services</h4>
           <ul className="space-y-4 text-sm text-foreground/70">
-            {["Local Car Rental", "Outstation Trips", "Wedding functions", "Ceramic Logistics"].map((s) => (
+            {["Local Car Rental", "Outstation Trips", "Ceramic Industry Tours", "Corporate Travel"].map((s) => (
               <li key={s} className="flex items-center justify-center sm:justify-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/20"></span> {s}</li>
             ))}
           </ul>

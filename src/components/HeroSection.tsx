@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, Star, ShieldCheck, Car, Users, MapPin, Calendar, Send, Navigation } from "lucide-react";
+import { Phone, MessageCircle, Star, ShieldCheck, Car, Users, MapPin, Calendar, Send, Navigation, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero_car.png";
 import { motion } from "framer-motion";
@@ -69,15 +69,31 @@ const HeroSection = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="space-y-8 lg:col-span-7 pr-4"
+            className="space-y-8 lg:col-span-7 pr-4 flex flex-col items-center text-center lg:items-start lg:text-left"
           >
-            <motion.div 
-              variants={itemVariants}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-primary/10 text-primary text-xs font-semibold tracking-wide border border-primary/20 backdrop-blur-md"
-            >
-              <Star className="w-3.5 h-3.5 fill-primary" />
-              Trusted Since 12 Years
-            </motion.div>
+            <div className="flex flex-nowrap items-center justify-center lg:justify-start gap-2 lg:gap-3 overflow-x-visible pb-1">
+              <motion.div 
+                variants={itemVariants}
+                className="inline-flex items-center gap-1.5 px-2 lg:px-3 py-1.5 rounded-xl bg-primary/10 text-primary text-[10px] lg:text-xs font-bold tracking-wide border border-primary/20 backdrop-blur-md whitespace-nowrap"
+              >
+                <Star className="w-3 h-3 lg:w-3.5 lg:h-3.5 fill-primary flex-shrink-0" />
+                Trusted Since 12 Years
+              </motion.div>
+              
+              <motion.div 
+                variants={itemVariants}
+                className="lg:hidden inline-flex items-center gap-1.5 px-2 lg:px-3 py-1.5 rounded-xl bg-green-500/10 text-green-500 text-[10px] lg:text-xs font-bold tracking-wide border border-green-500/20 backdrop-blur-md whitespace-nowrap"
+              >
+                <motion.div
+                  animate={{ opacity: [0.5, 1, 0.5] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="flex-shrink-0"
+                >
+                  <Clock className="w-3 h-3 lg:w-3.5 lg:h-3.5" />
+                </motion.div>
+                Available 24/7
+              </motion.div>
+            </div>
             
             <motion.h1 
               variants={itemVariants}
@@ -101,14 +117,14 @@ const HeroSection = () => {
             
             <motion.p 
               variants={itemVariants}
-              className="text-base md:text-lg text-foreground/70 max-w-xl leading-relaxed font-normal"
+              className="text-base md:text-lg text-foreground/70 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal"
             >
-              Serving since 12 years with 24/7 help. We provide cars for Local use, Outstation trips, and Weddings. Trusted by Morbi for safe journeys.
+              Serving since 12 years with 24/7 help. We provide cars for Local use, Outstation trips, and Ceramic Industry Tours. Trusted by Morbi for safe journeys.
             </motion.p>
             
             <motion.div 
               variants={itemVariants}
-              className="flex flex-wrap gap-4 pt-2"
+              className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 w-full"
             >
               <a href="tel:+919725763394">
                 <Button variant="outline" size="lg" className="h-16 px-10 glass-morphism text-white border-white/20 hover:bg-white/10 gap-3 text-lg transition-all rounded-xl font-bold">
@@ -119,22 +135,22 @@ const HeroSection = () => {
 
             <motion.div 
               variants={itemVariants}
-              className="pt-10"
+              className="pt-6 lg:pt-10 w-full"
             >
-               <div className="flex flex-wrap items-center gap-8 text-white/80">
+               <div className="flex flex-nowrap items-center justify-center lg:justify-start gap-4 lg:gap-12 text-white/80">
                  <div className="flex flex-col">
-                   <span className="text-3xl font-extrabold text-white">10+</span>
-                   <span className="text-[10px] font-bold uppercase tracking-widest text-primary">Best Cars</span>
+                   <span className="text-2xl lg:text-3xl font-extrabold text-white">10+</span>
+                   <span className="text-[8px] lg:text-[10px] font-bold uppercase tracking-widest text-primary whitespace-nowrap">Best Cars</span>
                  </div>
-                 <div className="w-px h-10 bg-white/10 hidden sm:block" />
+                 <div className="w-px h-8 bg-white/10" />
                  <div className="flex flex-col">
-                   <span className="text-3xl font-extrabold text-white">12+</span>
-                   <span className="text-[10px] font-bold uppercase tracking-widest text-primary">Years Experience</span>
+                   <span className="text-2xl lg:text-3xl font-extrabold text-white">12+</span>
+                   <span className="text-[8px] lg:text-[10px] font-bold uppercase tracking-widest text-primary whitespace-nowrap">Years Exp.</span>
                  </div>
-                 <div className="w-px h-10 bg-white/10 hidden sm:block" />
+                 <div className="w-px h-8 bg-white/10" />
                  <div className="flex flex-col">
-                   <span className="text-3xl font-extrabold text-white">5000+</span>
-                   <span className="text-[10px] font-bold uppercase tracking-widest text-primary">Happy Trips</span>
+                   <span className="text-2xl lg:text-3xl font-extrabold text-white">5000+</span>
+                   <span className="text-[8px] lg:text-[10px] font-bold uppercase tracking-widest text-primary whitespace-nowrap">Trips Done</span>
                  </div>
                </div>
             </motion.div>
@@ -148,35 +164,35 @@ const HeroSection = () => {
           >
             <div className="relative">
               <div className="absolute inset-x-0 -top-20 -bottom-20 bg-primary/10 blur-[120px] rounded-full animate-pulse -z-10" />
-              <div className="bg-[#0f141d]/60 backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 lg:p-10 shadow-elevated relative z-10">
-                <div className="mb-8">
-                  <h3 className="text-3xl font-extrabold text-white mb-2 tracking-tight">Book Your Ride</h3>
-                  <p className="text-white/40 text-sm">Fill details to get a quick price</p>
+              <div className="bg-[#0f141d]/60 backdrop-blur-3xl border border-white/10 rounded-[1.5rem] lg:rounded-[2.5rem] p-6 lg:p-10 shadow-elevated relative z-10">
+                <div className="mb-6 lg:mb-8 text-center lg:text-left">
+                  <h3 className="text-2xl lg:text-3xl font-extrabold text-white mb-1.5 tracking-tight">Book Your Ride</h3>
+                  <p className="text-white/40 text-xs lg:text-sm">Quick price in 1 minute</p>
                 </div>
                 
-                <form className="space-y-6" onSubmit={handleBooking}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">From Location</label>
+                <form className="space-y-4 lg:space-y-6" onSubmit={handleBooking}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-4">
+                    <div className="space-y-1.5 lg:space-y-2">
+                       <label className="text-[9px] lg:text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">From</label>
                        <div className="relative group">
-                         <div className="absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20">
-                           <MapPin className="w-4 h-4 text-primary" />
+                         <div className="absolute left-3.5 top-1/2 -translate-y-1/2 w-7 h-7 lg:w-8 lg:h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20">
+                           <MapPin className="w-3.5 h-3.5 text-primary" />
                          </div>
                          <input 
                             type="text" 
-                            placeholder="Pick-up City" 
+                            placeholder="Pick-up" 
                             required
                             value={bookingData.from}
                             onChange={(e) => setBookingData({...bookingData, from: e.target.value})}
-                            className="w-full h-14 bg-white/5 border border-white/10 rounded-2xl pl-14 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white text-sm" 
+                            className="w-full h-12 lg:h-14 bg-white/5 border border-white/10 rounded-xl lg:rounded-2xl pl-12 lg:pl-14 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white text-sm" 
                          />
                        </div>
                     </div>
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">To Location</label>
+                    <div className="space-y-1.5 lg:space-y-2">
+                       <label className="text-[9px] lg:text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">To</label>
                        <div className="relative group">
-                         <div className="absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20">
-                           <Navigation className="w-4 h-4 text-primary" />
+                         <div className="absolute left-3.5 top-1/2 -translate-y-1/2 w-7 h-7 lg:w-8 lg:h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20">
+                           <Navigation className="w-3.5 h-3.5 text-primary" />
                          </div>
                          <input 
                             type="text" 
@@ -184,55 +200,55 @@ const HeroSection = () => {
                             required
                             value={bookingData.to}
                             onChange={(e) => setBookingData({...bookingData, to: e.target.value})}
-                            className="w-full h-14 bg-white/5 border border-white/10 rounded-2xl pl-14 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white text-sm" 
+                            className="w-full h-12 lg:h-14 bg-white/5 border border-white/10 rounded-xl lg:rounded-2xl pl-12 lg:pl-14 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white text-sm" 
                          />
                        </div>
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Start Date</label>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-4">
+                    <div className="space-y-1.5 lg:space-y-2">
+                       <label className="text-[9px] lg:text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Start</label>
                        <div className="relative group">
-                         <div className="absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20 pointer-events-none">
-                           <Calendar className="w-4 h-4 text-primary" />
+                         <div className="absolute left-3.5 top-1/2 -translate-y-1/2 w-7 h-7 lg:w-8 lg:h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20 pointer-events-none">
+                           <Calendar className="w-3.5 h-3.5 text-primary" />
                          </div>
                          <input 
                             type="date" 
                             required
                             value={bookingData.startDate}
                             onChange={(e) => setBookingData({...bookingData, startDate: e.target.value})}
-                            className="w-full h-14 bg-white/5 border border-white/10 rounded-2xl pl-14 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white text-sm [color-scheme:dark] cursor-pointer" 
+                            className="w-full h-12 lg:h-14 bg-white/5 border border-white/10 rounded-xl lg:rounded-2xl pl-12 lg:pl-14 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white text-sm [color-scheme:dark] cursor-pointer" 
                          />
                        </div>
                     </div>
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">End Date</label>
+                    <div className="space-y-1.5 lg:space-y-2">
+                       <label className="text-[9px] lg:text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">End</label>
                        <div className="relative group">
-                         <div className="absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20 pointer-events-none">
-                           <Calendar className="w-4 h-4 text-primary" />
+                         <div className="absolute left-3.5 top-1/2 -translate-y-1/2 w-7 h-7 lg:w-8 lg:h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20 pointer-events-none">
+                           <Calendar className="w-3.5 h-3.5 text-primary" />
                          </div>
                          <input 
                             type="date" 
                             required
                             value={bookingData.endDate}
                             onChange={(e) => setBookingData({...bookingData, endDate: e.target.value})}
-                            className="w-full h-14 bg-white/5 border border-white/10 rounded-2xl pl-14 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white text-sm [color-scheme:dark] cursor-pointer" 
+                            className="w-full h-12 lg:h-14 bg-white/5 border border-white/10 rounded-xl lg:rounded-2xl pl-12 lg:pl-14 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white text-sm [color-scheme:dark] cursor-pointer" 
                          />
                        </div>
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                     <label className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Select Car</label>
+                  <div className="space-y-1.5 lg:space-y-2">
+                     <label className="text-[9px] lg:text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Car</label>
                      <div className="relative group">
-                        <div className="absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20 pointer-events-none">
-                           <Car className="w-4 h-4 text-primary" />
+                        <div className="absolute left-3.5 top-1/2 -translate-y-1/2 w-7 h-7 lg:w-8 lg:h-8 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-focus-within:bg-primary/20 pointer-events-none">
+                           <Car className="w-3.5 h-3.5 text-primary" />
                         </div>
                         <select 
                            value={bookingData.carType}
                            onChange={(e) => setBookingData({...bookingData, carType: e.target.value})}
-                           className="w-full h-14 bg-white/5 border border-white/10 rounded-2xl pl-14 pr-10 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white appearance-none cursor-pointer text-sm"
+                           className="w-full h-12 lg:h-14 bg-white/5 border border-white/10 rounded-xl lg:rounded-2xl pl-12 lg:pl-14 pr-10 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-white appearance-none cursor-pointer text-sm"
                         >
                            <option className="bg-[#0b0f14]">Any Car</option>
                            <option className="bg-[#0b0f14]">Swift (Hatchback)</option>
@@ -245,8 +261,8 @@ const HeroSection = () => {
                      </div>
                   </div>
 
-                  <Button type="submit" className="w-full h-16 rounded-2xl bg-primary text-primary-foreground font-extrabold text-lg gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-elevated group mt-4">
-                    Book Now on WhatsApp <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  <Button type="submit" className="w-full h-14 lg:h-16 rounded-xl lg:rounded-2xl bg-primary text-primary-foreground font-extrabold text-base lg:text-lg gap-3 hover:scale-[1.01] active:scale-[0.98] transition-all shadow-elevated group lg:mt-4">
+                    Book on WhatsApp <Send className="w-4 h-4 lg:w-5 lg:h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </Button>
                 </form>
               </div>

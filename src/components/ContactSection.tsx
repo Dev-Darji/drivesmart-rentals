@@ -136,7 +136,7 @@ const ContactSection = () => {
                       >
                         <option className="bg-[#0b0f14]">Local (Morbi City)</option>
                         <option className="bg-[#0b0f14]">Outstation Trip</option>
-                        <option className="bg-[#0b0f14]">Wedding Functions</option>
+                        <option className="bg-[#0b0f14]">Ceramic Factory Visit</option>
                         <option className="bg-[#0b0f14]">Custom Tour</option>
                       </select>
                     </div>
