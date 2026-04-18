@@ -26,34 +26,34 @@ const LocationsSection = () => (
         className="text-center mb-16 max-w-4xl mx-auto"
       >
         <span className="text-primary font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Locations</span>
-        <h2 className="text-4xl lg:text-5xl font-extrabold text-foreground mt-2 tracking-tight">Destinations Across Borders</h2>
-        <p className="text-muted-foreground mt-4 text-lg">Whether it's a quick airport run or a multi-state tour, we've got you covered.</p>
+        <h2 className="text-4xl lg:text-5xl font-extrabold text-foreground mt-2 tracking-tight">Popular Routes & Destinations</h2>
+        <p className="text-muted-foreground mt-4 text-lg">Reliable intercity trips, airport transfers, and outstation tours starting from Morbi.</p>
       </motion.div>
 
-      <div className="space-y-16">
-        {/* Right to Left Marquee: Cities */}
-        <div className="w-full relative flex overflow-x-hidden group">
-          <div className="absolute top-0 bottom-0 left-0 w-40 bg-gradient-to-r from-surface-warm to-transparent z-10"></div>
-          <div className="absolute top-0 bottom-0 right-0 w-40 bg-gradient-to-l from-surface-warm to-transparent z-10"></div>
+        <div className="space-y-12 lg:space-y-20">
+          {/* Right to Left Marquee: Cities */}
+          <div className="w-full relative flex overflow-x-hidden group">
+            <div className="absolute top-0 bottom-0 left-0 w-20 lg:w-40 bg-gradient-to-r from-surface-warm to-transparent z-10"></div>
+            <div className="absolute top-0 bottom-0 right-0 w-20 lg:w-40 bg-gradient-to-l from-surface-warm to-transparent z-10"></div>
 
-          <div className="animate-marquee flex flex-row gap-6 whitespace-nowrap py-4 group-hover:[animation-play-state:paused]" style={{ animationDuration: '45s' }}>
-            {[...cities, ...cities, ...cities].map((c, idx) => (
-              <span key={`${c}-${idx}`} className="inline-flex px-10 py-5 rounded-[1.5rem] border border-white/5 bg-card text-foreground font-bold text-lg shadow-sm hover:border-primary/40 hover:text-primary transition-all cursor-default">
-                {c}
-              </span>
-            ))}
+            <div className="animate-marquee flex flex-row gap-8 lg:gap-12 whitespace-nowrap py-4 group-hover:[animation-play-state:paused] w-max">
+              {[...cities, ...cities, ...cities, ...cities].map((c, idx) => (
+                <span key={`${c}-${idx}`} className="inline-flex px-10 py-5 rounded-[1.5rem] border border-white/5 bg-card text-foreground font-bold text-lg shadow-sm hover:border-primary/40 hover:text-primary transition-all cursor-default">
+                  {c}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Left to Right Marquee: Routes */}
-        <div className="w-full relative flex overflow-x-hidden group">
-          <div className="absolute top-0 bottom-0 left-0 w-40 bg-gradient-to-r from-surface-warm to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute top-0 bottom-0 right-0 w-40 bg-gradient-to-l from-surface-warm to-transparent z-10 pointer-events-none"></div>
+          {/* Left to Right Marquee: Routes */}
+          <div className="w-full relative flex overflow-x-hidden group">
+            <div className="absolute top-0 bottom-0 left-0 w-20 lg:w-40 bg-gradient-to-r from-surface-warm to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute top-0 bottom-0 right-0 w-20 lg:w-40 bg-gradient-to-l from-surface-warm to-transparent z-10 pointer-events-none"></div>
 
-          <div className="animate-marqueer flex flex-row gap-8 whitespace-nowrap py-6 group-hover:[animation-play-state:paused]" style={{ animationDuration: '45s' }}>
-            {[...routes, ...routes].map((r, idx) => (
-              <a
-                key={`${r.from}-${r.to}-${idx}`}
+            <div className="animate-marqueer flex flex-row gap-10 lg:gap-16 whitespace-nowrap py-6 group-hover:[animation-play-state:paused] w-max">
+              {[...routes, ...routes, ...routes, ...routes].map((r, idx) => (
+                <a
+                  key={`${r.from}-${r.to}-${idx}`}
                 href={`https://wa.me/919725763394?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20book%20a%20trip%20from%20${r.from}%20to%20${r.to}`}
                 target="_blank"
                 rel="noopener noreferrer"

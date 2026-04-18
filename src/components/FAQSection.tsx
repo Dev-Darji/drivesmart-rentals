@@ -22,7 +22,7 @@ const FAQSection = () => {
           <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
             <HelpCircle className="w-8 h-8 text-primary" />
           </div>
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight mb-4">Curious About Service?</h2>
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight mb-4">Got Questions?</h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">Everything you need to know about booking with Shiv Car Rental.</p>
         </motion.div>
         

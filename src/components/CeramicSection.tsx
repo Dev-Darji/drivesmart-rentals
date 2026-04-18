@@ -20,14 +20,14 @@ const CeramicSection = () => {
             <div className="relative rounded-[2.5rem] overflow-hidden border border-white/10 aspect-[4/3] group">
               <img 
                 src={ceramicImg} 
-                alt="Ceramic Industry Help" 
+                alt="Morbi Ceramic Industry Tour" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[5s]" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
               <div className="absolute bottom-10 left-10">
                 <div className="glass-morphism px-6 py-4 rounded-2xl">
-                  <span className="text-primary font-bold block text-sm tracking-widest uppercase">Global Help</span>
-                  <span className="text-white text-xl font-extrabold mt-1 block">Morbi Ceramic Hub</span>
+                  <span className="text-primary font-bold block text-sm tracking-widest uppercase">Expert Guidance</span>
+                  <span className="text-white text-xl font-extrabold mt-1 block">The Ultimate Ceramic Tour</span>
                 </div>
               </div>
             </div>
@@ -41,12 +41,12 @@ const CeramicSection = () => {
             className="order-1 lg:order-2 space-y-8"
           >
             <div>
-              <span className="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Our Special Help</span>
+              <span className="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Specialized Business Travel</span>
               <h2 className="text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                Helping the <br/><span className="text-primary">Ceramic Business</span>
+                Morbi <span className="text-primary">Ceramic Industry</span> <br/>Tours & Factory Visits
               </h2>
               <p className="text-white/60 text-lg mt-6 leading-relaxed">
-                Apart from car rental, we also help Morbi's factories. We provide easy transport for ceramic business and import-export work.
+                Visiting Morbi for ceramic sourcing? We specialize in full-day industrial tours, taking you from one factory to another with ease and comfort.
               </p>
             </div>
 
@@ -54,18 +54,18 @@ const CeramicSection = () => {
               {[
                 { 
                   icon: Globe, 
-                  title: "Import & Export Help", 
-                  desc: "Easy car help for your international trade and business travels." 
+                  title: "International Delegate Support", 
+                  desc: "Premium transportation tailored for international buyers and export-import delegates visiting Morbi." 
                 },
                 { 
                   icon: Factory, 
-                  title: "Factory Pickup & Drop", 
-                  desc: "Special cars for factory visits and office work." 
+                  title: "All-Day Factory Routing", 
+                  desc: "Experienced drivers who know every factory location and shortcut in the vast Morbi industrial zone." 
                 },
                 { 
                   icon: Box, 
-                  title: "Sample & Goods Help", 
-                  desc: "Safe and fast delivery for your ceramic samples and small items." 
+                  title: "Showroom Hopping", 
+                  desc: "A seamless way to visit multiple ceramic showrooms and manufacturing units in a single day." 
                 }
               ].map((item, i) => (
                 <motion.div 
@@ -88,9 +88,9 @@ const CeramicSection = () => {
             </div>
 
             <div className="pt-4">
-               <a href="https://wa.me/919725763394?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20know%20more%20about%20your%20Ceramic%20Industry%20Services" target="_blank" rel="noopener noreferrer">
+               <a href="https://wa.me/919725763394?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20book%20a%20full-day%20Ceramic%20Industry%20Tour" target="_blank" rel="noopener noreferrer">
                  <button className="flex items-center gap-3 bg-white/5 hover:bg-white/10 text-white font-bold py-4 px-8 rounded-2xl border border-white/10 transition-all group">
-                   Ask About Factory Solutions
+                   Book Your Ceramic Tour
                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                  </button>
                </a>
