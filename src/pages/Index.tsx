@@ -9,18 +9,19 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import PageReveal from "@/components/PageReveal";
 
 const Index = () => (
   <main className="min-h-screen bg-background">
     <Navbar />
-    <HeroSection />
-    <AboutSection />
-    <CeramicSection />
-    <FleetSection />
-    <LocationsSection />
-    <ReviewsSection />
-    <FAQSection />
-    <ContactSection />
+    <PageReveal><HeroSection /></PageReveal>
+    <PageReveal><AboutSection /></PageReveal>
+    <PageReveal><CeramicSection /></PageReveal>
+    <PageReveal><FleetSection /></PageReveal>
+    <PageReveal><LocationsSection /></PageReveal>
+    <PageReveal><ReviewsSection /></PageReveal>
+    <PageReveal><FAQSection /></PageReveal>
+    <PageReveal><ContactSection /></PageReveal>
     <Footer />
     <FloatingWhatsApp />
   </main>

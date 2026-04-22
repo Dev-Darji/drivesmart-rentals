@@ -13,7 +13,7 @@ const Footer = () => (
         >
           <h3 className="font-extrabold text-2xl mb-6 tracking-tight">🚗 Shiv Car Rental</h3>
           <p className="text-foreground/60 text-base leading-relaxed">
-            Your trusted Car Rental partner in Morbi and across Gujarat. Reliable rides, transparent pricing, and professional service since 12 years.
+            Your trusted Car Rental partner in Morbi and across Gujarat. Reliable rides, transparent pricing, and professional service since 15 years.
           </p>
         </motion.div>
 
@@ -56,7 +56,7 @@ const Footer = () => (
           <ul className="space-y-4 text-sm text-foreground/70">
             <li className="flex items-start justify-center sm:justify-start gap-3">
               <MapPin className="w-4 h-4 mt-1 flex-shrink-0 text-primary" />
-              <span>Parshvanath Complex, Morbi-2</span>
+              <span>Shiv car rental opposite Hanumanji Temple, In Front of Raj Nagar, Panchasar Road, Morbi-363641</span>
             </li>
             <li className="space-y-2 pt-2 border-t border-white/5">
               <div className="flex items-center justify-center sm:justify-start gap-3 text-primary font-bold">

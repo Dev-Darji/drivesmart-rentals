@@ -19,12 +19,12 @@ const ContactSection = () => {
       `*Service:* ${formData.serviceType}%0A` +
       `*Passengers:* ${formData.passengers}%0A%0A` +
       `_Please get back to me with a price._`;
-    
+
     window.open(`https://wa.me/919725763394?text=${message}`, "_blank");
   };
 
   const contactItems = [
-    { icon: MapPin, title: "Our Office", desc: "Parshvanath Complex, Morbi-2, Gujarat" },
+    { icon: MapPin, title: "Our Office", desc: "Shiv car rental opposite Hanumanji Temple, In Front of Raj Nagar, Panchasar Road , Morbi-363641" },
     { icon: Phone, title: "Booking Numbers", desc: "+91 97257 63394" },
     { icon: Mail, title: "Email for Help", desc: "amitsolanki40518@gmail.com" },
     { icon: Clock, title: "Open Hours", desc: "Open 24/7 – Always Ready" }
@@ -34,7 +34,7 @@ const ContactSection = () => {
     <section id="contact" className="py-16 lg:py-32 bg-surface-warm relative overflow-hidden">
       <div className="container max-w-6xl px-4 lg:px-8 relative z-10">
         <div className="mb-12 lg:mb-16 text-center lg:text-left">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -42,7 +42,7 @@ const ContactSection = () => {
           >
             How to Find Us
           </motion.span>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -50,7 +50,7 @@ const ContactSection = () => {
           >
             Get in Touch
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -61,11 +61,11 @@ const ContactSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-20">
-          
+
           <div className="space-y-6 lg:space-y-12">
             <div className="grid gap-4 lg:gap-6">
               {contactItems.map((item, i) => (
-                <motion.div 
+                <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -98,40 +98,40 @@ const ContactSection = () => {
             <div className="bg-card border border-white/10 rounded-[1.5rem] lg:rounded-[2.5rem] p-5 lg:p-10 shadow-elevated transition-all hover:border-primary/20">
               <h3 className="text-xl lg:text-3xl font-bold text-white mb-2">Send a Question</h3>
               <p className="text-foreground/50 text-xs lg:text-base mb-6 lg:mb-8">Fill this form and we will call you back soon.</p>
-              
+
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
-                       <label className="text-[9px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Your Name</label>
-                       <input 
-                         type="text" 
-                         placeholder="Enter name" 
-                         required
-                         value={formData.name}
-                         onChange={(e) => setFormData({...formData, name: e.target.value})}
-                         className="w-full h-11 lg:h-14 bg-white/5 border border-white/10 rounded-lg lg:rounded-2xl px-5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all text-white text-sm placeholder:text-white/20" 
-                       />
+                      <label className="text-[9px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Your Name</label>
+                      <input
+                        type="text"
+                        placeholder="Enter name"
+                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        className="w-full h-11 lg:h-14 bg-white/5 border border-white/10 rounded-lg lg:rounded-2xl px-5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all text-white text-sm placeholder:text-white/20"
+                      />
                     </div>
                     <div className="space-y-1.5">
-                       <label className="text-[9px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Phone Number</label>
-                       <input 
-                         type="tel" 
-                         placeholder="Enter number" 
-                         required
-                         value={formData.phone}
-                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                         className="w-full h-11 lg:h-14 bg-white/5 border border-white/10 rounded-lg lg:rounded-2xl px-5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all text-white text-sm placeholder:text-white/20" 
-                       />
+                      <label className="text-[9px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Phone Number</label>
+                      <input
+                        type="tel"
+                        placeholder="Enter number"
+                        required
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        className="w-full h-11 lg:h-14 bg-white/5 border border-white/10 rounded-lg lg:rounded-2xl px-5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all text-white text-sm placeholder:text-white/20"
+                      />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-[9px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Select Service</label>
-                      <select 
+                      <select
                         value={formData.serviceType}
-                        onChange={(e) => setFormData({...formData, serviceType: e.target.value})}
+                        onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
                         className="w-full h-11 lg:h-14 bg-white/5 border border-white/10 rounded-lg lg:rounded-2xl px-5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all text-white appearance-none cursor-pointer text-xs lg:text-sm"
                       >
                         <option className="bg-[#0b0f14]">Local (Morbi City)</option>
@@ -143,9 +143,9 @@ const ContactSection = () => {
                     <div className="space-y-1.5">
                       <label className="text-[9px] font-bold text-primary uppercase tracking-[0.2em] ml-1">How many people?</label>
                       <div className="relative">
-                        <select 
+                        <select
                           value={formData.passengers}
-                          onChange={(e) => setFormData({...formData, passengers: e.target.value})}
+                          onChange={(e) => setFormData({ ...formData, passengers: e.target.value })}
                           className="w-full h-11 lg:h-14 bg-white/5 border border-white/10 rounded-lg lg:rounded-2xl px-5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all text-white appearance-none cursor-pointer text-xs lg:text-sm"
                         >
                           <option className="bg-[#0b0f14]">1-4 People</option>

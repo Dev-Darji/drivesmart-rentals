@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const excellenceCards = [
   {
     icon: Clock,
-    title: "12+ Years of Trusted Help",
-    desc: "Helping Morbi people since 2012 with safe and easy car booking.",
+    title: "15+ Years of Trusted Help",
+    desc: "Helping Morbi people since 2009 with safe and easy car booking.",
     color: "from-blue-500/20 to-transparent"
   },
   {
@@ -17,7 +17,7 @@ const excellenceCards = [
   },
   {
     icon: Users,
-    title: "5000+ Happy Trips",
+    title: "10,000+ Happy Trips",
     desc: "Finished thousands of successful trips all over Gujarat.",
     color: "from-green-500/20 to-transparent"
   },
@@ -51,7 +51,7 @@ const AboutSection = () => (
           transition={{ delay: 0.1 }}
           className="text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight"
         >
-          12 Years of <span className="text-primary italic">Trust</span>
+          15 Years of <span className="text-primary italic">Trust</span>
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ const AboutSection = () => (
           <div className="relative z-10 space-y-6">
             <h3 className="text-3xl font-bold text-white">The Shiv Promise</h3>
             <p className="text-foreground/70 text-lg leading-relaxed">
-              Serving Morbi since 2012. We work on three simple things: <span className="text-primary font-bold italic">Honesty, Safety, and Good Prices.</span>
+              Serving Morbi since 2010. We work on three simple things: <span className="text-primary font-bold italic">Honesty, Safety, and Good Prices.</span>
             </p>
             <p className="text-foreground/70 text-lg leading-relaxed">
               If you are planning for a wedding or a long trip, we are always here for your comfort.
@@ -99,7 +99,7 @@ const AboutSection = () => (
           <div className="absolute bottom-10 left-10">
             <div className="glass-morphism px-6 py-4 rounded-2xl border border-white/10">
                <span className="text-white font-bold block text-lg italic">"Morbi's Safest Rides"</span>
-               <span className="text-white/60 text-xs font-medium uppercase tracking-widest mt-1 block">Since 2012</span>
+               <span className="text-white/60 text-xs font-medium uppercase tracking-widest mt-1 block">Since 2010</span>
             </div>
           </div>
         </motion.div>

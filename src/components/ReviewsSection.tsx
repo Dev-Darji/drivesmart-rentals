@@ -5,7 +5,7 @@ const reviews = [
   { name: "Rajesh Patel", rating: 5, review: "Excellent service! The driver was very punctual and the car was spotlessly clean. Best Car Rental across Gujarat." },
   { name: "Priya Sharma", rating: 5, review: "Booked an Innova for our family trip to Udaipur. Very comfortable ride and reasonable pricing. Highly recommended!" },
   { name: "Amit Desai", rating: 4, review: "Been using their airport pickup service for a year now. Always on time and very professional drivers." },
-  { name: "Sneha Joshi", rating: 5, review: "Used their tempo traveller for a group trip to Somnath. Everything was perfectly arranged. Will book again!" },
+  { name: "Sneha Joshi", rating: 5, review: "Prompt service and very polite drivers. The car was in excellent condition, making our long trip very comfortable. Truly reliable!" },
   { name: "Kiran Mehta", rating: 5, review: "Transparent pricing with no hidden charges. The WhatsApp booking is super convenient. Great experience overall." },
   { name: "Deepak Shah", rating: 4, review: "Very reliable for outstation trips. The driver knew all the routes well and was very courteous." },
 ];

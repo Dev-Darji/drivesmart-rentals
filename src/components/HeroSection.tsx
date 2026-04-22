@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero_car.png";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import StatCounter from "./StatCounter";
 
 const HeroSection = () => {
   const [bookingData, setBookingData] = useState({
@@ -77,7 +78,7 @@ const HeroSection = () => {
                 className="inline-flex items-center gap-1.5 px-2 lg:px-3 py-1.5 rounded-xl bg-primary/10 text-primary text-[10px] lg:text-xs font-bold tracking-wide border border-primary/20 backdrop-blur-md whitespace-nowrap"
               >
                 <Star className="w-3 h-3 lg:w-3.5 lg:h-3.5 fill-primary flex-shrink-0" />
-                Trusted Since 12 Years
+                Trusted Since 15 Years
               </motion.div>
               
               <motion.div 
@@ -119,7 +120,7 @@ const HeroSection = () => {
               variants={itemVariants}
               className="text-base md:text-lg text-foreground/70 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal"
             >
-              Serving since 12 years with 24/7 help. We provide cars for Local use, Outstation trips, and Ceramic Industry Tours. Trusted by Morbi for safe journeys.
+              Serving since 15 years with 24/7 help. We provide cars for Local use, Outstation trips, and Ceramic Industry Tours. Trusted by Morbi for safe journeys.
             </motion.p>
             
             <motion.div 
@@ -137,22 +138,28 @@ const HeroSection = () => {
               variants={itemVariants}
               className="pt-6 lg:pt-10 w-full"
             >
-               <div className="flex flex-nowrap items-center justify-center lg:justify-start gap-4 lg:gap-12 text-white/80">
-                 <div className="flex flex-col">
-                   <span className="text-2xl lg:text-3xl font-extrabold text-white">10+</span>
-                   <span className="text-[8px] lg:text-[10px] font-bold uppercase tracking-widest text-primary whitespace-nowrap">Best Cars</span>
-                 </div>
-                 <div className="w-px h-8 bg-white/10" />
-                 <div className="flex flex-col">
-                   <span className="text-2xl lg:text-3xl font-extrabold text-white">12+</span>
-                   <span className="text-[8px] lg:text-[10px] font-bold uppercase tracking-widest text-primary whitespace-nowrap">Years Exp.</span>
-                 </div>
-                 <div className="w-px h-8 bg-white/10" />
-                 <div className="flex flex-col">
-                   <span className="text-2xl lg:text-3xl font-extrabold text-white">5000+</span>
-                   <span className="text-[8px] lg:text-[10px] font-bold uppercase tracking-widest text-primary whitespace-nowrap">Trips Done</span>
-                 </div>
-               </div>
+                <div className="flex flex-nowrap items-center justify-center lg:justify-start gap-4 lg:gap-12 text-white/80">
+                  <div className="flex flex-col">
+                    <span className="text-2xl lg:text-3xl font-extrabold text-white">
+                      <StatCounter value={10} suffix="+" />
+                    </span>
+                    <span className="text-[8px] lg:text-[10px] font-bold uppercase tracking-widest text-primary whitespace-nowrap">Best Cars</span>
+                  </div>
+                  <div className="w-px h-8 bg-white/10" />
+                  <div className="flex flex-col">
+                    <span className="text-2xl lg:text-3xl font-extrabold text-white">
+                      <StatCounter value={15} suffix="+" />
+                    </span>
+                    <span className="text-[8px] lg:text-[10px] font-bold uppercase tracking-widest text-primary whitespace-nowrap">Years Exp.</span>
+                  </div>
+                  <div className="w-px h-8 bg-white/10" />
+                  <div className="flex flex-col">
+                    <span className="text-2xl lg:text-3xl font-extrabold text-white">
+                      <StatCounter value={10000} suffix="+" />
+                    </span>
+                    <span className="text-[8px] lg:text-[10px] font-bold uppercase tracking-widest text-primary whitespace-nowrap">Trips Done</span>
+                  </div>
+                </div>
             </motion.div>
           </motion.div>
 
