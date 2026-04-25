@@ -24,7 +24,7 @@ const HeroSection = () => {
       `*Preferred Car:* ${bookingData.carType}%0A%0A` +
       `_Please confirm availability for this trip._`;
     
-    window.open(`https://wa.me/919725763394?text=${message}`, "_blank");
+    window.open(`https://wa.me/916354810299?text=${message}`, "_blank");
   };
 
   const containerVariants = {
@@ -127,7 +127,7 @@ const HeroSection = () => {
               variants={itemVariants}
               className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 w-full"
             >
-              <a href="tel:+919725763394">
+              <a href="tel:+916354810299">
                 <Button variant="outline" size="lg" className="h-16 px-10 glass-morphism text-white border-white/20 hover:bg-white/10 gap-3 text-lg transition-all rounded-xl font-bold">
                   <Phone className="w-6 h-6" /> Call Now
                 </Button>

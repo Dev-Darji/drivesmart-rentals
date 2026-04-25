@@ -59,23 +59,22 @@ const Footer = () => (
               <span>Shiv car rental opposite Hanumanji Temple, In Front of Raj Nagar, Panchasar Road, Morbi-363641</span>
             </li>
             <li className="space-y-2 pt-2 border-t border-white/5">
-              <div className="flex items-center justify-center sm:justify-start gap-3 text-primary font-bold">
-                <Phone className="w-4 h-4" /> <span>+91 97257 63394</span>
-              </div>
-              <div className="flex items-center justify-center sm:justify-start gap-3 pl-7 text-[13px]">
-                <span>+91 63548 10299</span>
-              </div>
-              <div className="flex items-center justify-center sm:justify-start gap-3 pl-7 text-[13px]">
-                <span>+91 72650 53531</span>
+              <a href="tel:+916354810299" className="flex items-center justify-center sm:justify-start gap-3 text-primary font-bold hover:scale-105 transition-transform w-fit">
+                <Phone className="w-4 h-4" /> <span>+91 63548 10299</span>
+              </a>
+              <div className="flex flex-col gap-2 pl-7 pt-1">
+                <a href="tel:+919725763394" className="flex items-center justify-center sm:justify-start text-[13px] hover:text-primary transition-colors">
+                  <span>+91 97257 63394</span>
+                </a>
+                <a href="tel:+917265053531" className="flex items-center justify-center sm:justify-start text-[13px] hover:text-primary transition-colors">
+                  <span>+91 72650 53531</span>
+                </a>
               </div>
             </li>
             <li className="space-y-2 pt-2 border-t border-white/5">
               <div className="flex items-center justify-center sm:justify-start gap-3 group">
                 <Mail className="w-4 h-4 text-primary" />
                 <a href="mailto:amitsolanki40518@gmail.com" className="hover:text-primary transition-colors text-[13px]">amitsolanki40518@gmail.com</a>
-              </div>
-              <div className="flex items-center justify-center sm:justify-start gap-3 group pl-7">
-                <a href="mailto:pradipgoshai838@gmail.com" className="hover:text-primary transition-colors text-[13px]">pradipgoshai838@gmail.com</a>
               </div>
             </li>
           </ul>

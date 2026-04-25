@@ -127,7 +127,7 @@ const Navbar = () => {
             <motion.a
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:+919725763394"
+              href="tel:+916354810299"
               className="bg-primary text-primary-foreground w-11 h-11 flex items-center justify-center rounded-2xl shadow-lg hover:bg-primary/90 transition-all border border-primary/20"
             >
               <Phone className="w-5 h-5" />
@@ -192,11 +192,11 @@ const Navbar = () => {
 
               <div className="mt-auto pb-8">
                 <div className="grid grid-cols-1 gap-3">
-                  <a href="tel:+919725763394" className="bg-primary text-primary-foreground h-14 rounded-2xl text-center shadow-lg flex items-center justify-center gap-3 font-black text-sm">
+                  <a href="tel:+916354810299" className="bg-primary text-primary-foreground h-14 rounded-2xl text-center shadow-lg flex items-center justify-center gap-3 font-black text-sm">
                     <Phone className="w-4 h-4" />
                     CALL NOW
                   </a>
-                  <a href="https://wa.me/919725763394" className="bg-[#25D366] text-white h-14 rounded-2xl text-center shadow-lg flex items-center justify-center gap-3 font-black text-sm">
+                  <a href="https://wa.me/916354810299" className="bg-[#25D366] text-white h-14 rounded-2xl text-center shadow-lg flex items-center justify-center gap-3 font-black text-sm">
                     <MessageSquare className="w-4 h-4" />
                     WHATSAPP
                   </a>

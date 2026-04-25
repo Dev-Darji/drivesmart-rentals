@@ -54,7 +54,7 @@ const LocationsSection = () => (
               {[...routes, ...routes, ...routes, ...routes].map((r, idx) => (
                 <a
                   key={`${r.from}-${r.to}-${idx}`}
-                href={`https://wa.me/919725763394?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20book%20a%20trip%20from%20${r.from}%20to%20${r.to}`}
+                href={`https://wa.me/916354810299?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20book%20a%20trip%20from%20${r.from}%20to%20${r.to}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center min-w-[320px] bg-card rounded-[2rem] p-8 shadow-card border border-white/5 hover:border-primary/50 transition-all group/route relative overflow-hidden"

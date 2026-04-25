@@ -106,7 +106,7 @@ const FleetSection = () => (
               </div>
 
               <a
-                href={`https://wa.me/919725763394?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20book%20the%20${car.name}`}
+                href={`https://wa.me/916354810299?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20book%20the%20${car.name}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block mt-auto w-full group/btn"

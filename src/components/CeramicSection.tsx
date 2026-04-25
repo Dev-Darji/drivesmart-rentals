@@ -88,7 +88,7 @@ const CeramicSection = () => {
             </div>
 
             <div className="pt-4">
-               <a href="https://wa.me/919725763394?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20book%20a%20full-day%20Ceramic%20Industry%20Tour" target="_blank" rel="noopener noreferrer">
+               <a href="https://wa.me/916354810299?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20book%20a%20full-day%20Ceramic%20Industry%20Tour" target="_blank" rel="noopener noreferrer">
                  <button className="flex items-center gap-3 bg-white/5 hover:bg-white/10 text-white font-bold py-4 px-8 rounded-2xl border border-white/10 transition-all group">
                    Book Your Ceramic Tour
                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

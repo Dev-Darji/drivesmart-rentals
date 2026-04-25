@@ -20,12 +20,12 @@ const ContactSection = () => {
       `*Passengers:* ${formData.passengers}%0A%0A` +
       `_Please get back to me with a price._`;
 
-    window.open(`https://wa.me/919725763394?text=${message}`, "_blank");
+    window.open(`https://wa.me/916354810299?text=${message}`, "_blank");
   };
 
   const contactItems = [
     { icon: MapPin, title: "Our Office", desc: "Shiv car rental opposite Hanumanji Temple, In Front of Raj Nagar, Panchasar Road , Morbi-363641" },
-    { icon: Phone, title: "Booking Numbers", desc: "+91 97257 63394" },
+    { icon: Phone, title: "Booking Numbers", desc: "+91 63548 10299" },
     { icon: Mail, title: "Email for Help", desc: "amitsolanki40518@gmail.com" },
     { icon: Clock, title: "Open Hours", desc: "Open 24/7 – Always Ready" }
   ];
@@ -167,12 +167,12 @@ const ContactSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8 items-stretch justify-center">
-              <a href="tel:+919725763394" className="w-full sm:w-auto">
+              <a href="tel:+916354810299" className="w-full sm:w-auto">
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 gap-3 h-12 lg:h-14 px-6 lg:px-8 rounded-lg lg:rounded-2xl font-bold text-base lg:text-lg shadow-elevated transition-all">
                   <Phone className="w-4 h-4 lg:w-5 lg:h-5" /> Call Now
                 </Button>
               </a>
-              <a href="https://wa.me/919725763394" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <a href="https://wa.me/916354810299" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button variant="outline" className="w-full border-white/10 glass-morphism text-white gap-3 h-12 lg:h-14 px-6 lg:px-8 rounded-lg lg:rounded-2xl font-bold text-base lg:text-lg hover:bg-white/10 transition-all">
                   <MessageCircle className="w-4 h-4 lg:w-5 lg:h-5" /> WhatsApp Us
                 </Button>

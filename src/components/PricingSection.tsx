@@ -90,7 +90,7 @@ const PricingSection = () => (
             </ul>
 
             <a 
-              href={`https://wa.me/919725763394?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20know%20about%20the%20${pkg.title}`} 
+              href={`https://wa.me/916354810299?text=Hi%20Shiv%20Car%20Rental%2C%20I%20want%20to%20know%20about%20the%20${pkg.title}`} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="mt-auto block group/btn"
